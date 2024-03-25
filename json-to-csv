@@ -1,8 +1,0 @@
-/*
- * Parse a JSON String and convert it to CSV
- */
-List<Map<String, String>> flatJson = JSONFlattener.parseJson(jsonString);
-// Using the default separator ','
-// If you want to use an other separator like ';' or '\t' use
-// CSVWriter.getCSV(flatJSON, separator) method
-CSVWriter.writeToFile(CSVWriter.getCSV(flatJson), "files/sample_string.csv");
